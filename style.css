@@ -1,0 +1,402 @@
+body {
+    /* background-color: rgb(255 252 0); */
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.header {
+    z-index: 100;
+    background-color: rgb(255 252 0);
+    width: 100%;
+    top: 0;
+    align-items: center;
+    position: fixed;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo_bar {
+    flex: 20%;
+    display: flex;
+    margin-left: 50px;
+}
+
+.menu_rounded img {
+   width: 30px;
+}
+
+.logo_bar img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.nav {
+    flex: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.navlinks_holder ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 650px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li a img {
+    margin-left: 5px;
+}
+
+.download_btn {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.download_btn:hover {
+    transition: ease-out  0.4s;
+    margin-top: -11px;
+}
+
+.download_btn img {
+    height: 25px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.download_btn a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-align: center;
+    width: 180px;
+}
+
+.download_btn a p {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* start of main */
+
+.main {
+    background-color: rgb(255 252 0);
+    width: 100%;
+    height: 2700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .main1 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    width: 85%;
+    right: 300px;
+    left: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main1_img {
+    width: 350px;
+}
+
+.main1_img img {
+    object-fit: contain;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.main1_text {
+    flex: 1;
+    padding-top: 80px;
+    padding-left: 55px;
+}
+
+.main1_text h1 {
+    font-size: 65px;
+}
+
+.main1_text p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.main1_text button {
+    padding: 15px 60px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    background-color: black;
+    cursor: pointer;
+    transition: linear ease 0.3s;
+}
+
+.main1_text button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.main2 {
+    position: relative;
+    top: 600px;
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+.main2_img img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 700px;
+    width: 350px;
+}
+
+.main2_text {
+    flex: 1;
+    padding-top: 100px;
+    padding-left: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main2_text h1 {
+    font-size: 65px;
+}
+
+.makeshift_dropdown {
+    display: flex;
+    padding:  0;
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    width: 120px;
+    background-color: white;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.input_holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.input {
+    border: none;
+    padding: 20px 0;
+}
+
+.input_text {
+  font-size: larger;
+  outline: none;
+  font-weight: 500;
+  width: 300px;  
+  border-radius: 15px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+}
+
+.input_btn {
+    width: 160px;
+    font-size: large;
+    margin-right: 50px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 35px;
+    color: white;
+}
+
+.input_btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.main3 {
+    position: relative;
+    top: 700px;
+    justify-content: space-between;
+    display: flex;
+    width: 85%;
+}
+
+.main3_img img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+}
+
+.main3_text {
+    flex: 1;
+    padding-top: 100px;
+    padding-left: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main3_text h1 {
+    font-size: 62px;
+}
+
+.friends_btn {
+    width: 200px;
+    background-color: black;
+    font-size: large;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 35px;
+    color:  white;
+    font-weight: bold;
+}
+
+.friends_btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.snapchat {
+    position: relative;
+    top: 900px;
+}
+
+.snapchat .input_holder {
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 35px;
+}
+
+.snapchat_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.snapchat_logo img {
+    width: 100px;
+}
+
+.snapchat_roles {
+    display: flex;
+    text-align: center;
+    padding: 0 70px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.role {
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.footer {
+    position: relative;
+    padding: 60px 0;
+    top: 1085px;
+    display: flex;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 300px;
+    flex-direction: column;
+}
+
+.footer_first_row {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.list_head {
+    font-weight: 700;
+}
+
+.list-dropdown {
+    display: flex;
+    width: 150px;
+    padding: 5px 15px;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #F7F8F9;
+    justify-content: space-between;
+}
+
+.list-dropdown img {
+    object-fit: contain;
+}
+
+.copyright {
+    position: relative;
+    top: 1100px;
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.copy_first {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+}
